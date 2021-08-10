@@ -20,7 +20,6 @@ const registerStore = async (req, res) => {
   return res.status(200).send({ store });
 };
 
-
 const listStore = async (req, res) => {
   const store = await Store.find();
   if (!store) return res.status(401).send("No Store");
